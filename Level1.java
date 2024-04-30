@@ -9,7 +9,10 @@ public class Level1 {
         System.out.print("두 번째 숫자를 입력하세요: ");
         int num2 = scanner.nextInt();
 
-        System.out.println("num1, num2 = " + num1 + ", " + num2);
+        System.out.println("사칙연산 기호를 입력하세요: ");
+        char operator = scanner.next().charAt(0);
+
+        System.out.println("operator: " + operator);
 
     }
 }
