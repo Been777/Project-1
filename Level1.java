@@ -1,10 +1,12 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Level1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-
+        int[] results = new int[10];
+        int index = 0;
 
         do {
             System.out.print("첫 번째 숫자를 입력하세요: ");
@@ -41,7 +43,9 @@ public class Level1 {
             }
 
             System.out.println("결과 : " + result);
-
+            results[index] = result;
+            index++;
+            System.out.println("Arrays.toString(results) = " + Arrays.toString(results));
 
             System.out.println("더 계산하시겠습니까? (exit 입력 시 종료"); // Y/N 기능 추가하면 좋을듯
         } while (!scanner.next().equals("exit"));
